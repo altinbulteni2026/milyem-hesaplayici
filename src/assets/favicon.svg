@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Milyem hesabı">
+ <rect width="64" height="64" rx="16" fill="#12272b"/>
+ <path d="M16 19h32l6 26H10z" fill="#cda666"/>
+ <path d="M16 19h32l-7 7H23z" fill="#efd6a1"/>
+ <path d="M21 36h22" stroke="#12272b" stroke-width="4" stroke-linecap="round"/>
+</svg>

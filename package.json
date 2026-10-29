@@ -1,0 +1,11 @@
+{
+  "name": "milyem-hesaplayici",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Fiyat API'si olmadan ayar ve milyeme göre has altın hesabı",
+  "scripts": {
+    "test": "node --test tests/calculator.test.js"
+  },
+  "license": "MIT"
+}

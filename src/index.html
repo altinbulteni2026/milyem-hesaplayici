@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Milyem Hesaplayıcı | Altın Ayarı ve Has Altın Gramı</title>
+  <meta name="description" content="8, 14, 18, 22 ve 24 ayar altının milyem karşılığını öğrenin. Takının gramı ve saflığıyla teorik has altın miktarını ücretsiz hesaplayın; canlı fiyat gerekmez.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="{{PAGE_URL}}">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:title" content="Milyem Hesaplayıcı — Altın Ayarı ve Has Altın Gramı">
+  <meta property="og:description" content="Ayarı ve gramı girerek teorik has altın miktarını hesaplayın. Fiyat API'si veya kayıt gerekmez.">
+  <meta property="og:url" content="{{PAGE_URL}}">
+  <meta name="theme-color" content="#173c3d">
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/site.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Milyem Hesaplayıcı","url":"{{PAGE_URL}}","applicationCategory":"EducationalApplication","operatingSystem":"Any","inLanguage":"tr","isAccessibleForFree":true,"description":"Ayar ve milyeme göre teorik has altın gramı hesaplayan ücretsiz yerel web aracı."}</script>
+  <script type="module" src="./assets/app.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">İçeriğe geç</a>
+<header class="site-header"><div class="wrap nav">
+  <a class="brand" href="./" aria-label="Milyem Hesaplayıcı ana sayfa"><span class="brand-emblem" aria-hidden="true">‰</span>Milyem <span style="font-weight:450">Hesaplayıcı</span></a>
+  <nav class="nav-links" aria-label="Ana menü"><a href="./" aria-current="page">Hesaplayıcı</a><a href="./rehber/ayar-ve-milyem/">Ayar ve milyem</a><a href="./rehber/hesaplama-ornekleri/">Örnekler</a></nav>
+</div></header>
+<main id="main">
+<section class="hero"><div class="wrap hero-wrap"><div class="hero-text">
+  <span class="eyebrow">Ücretsiz · Yerel hesaplama</span>
+  <h1>Altının içindeki <span style="color:#e8c992">has altın</span> kaç gram?</h1>
+  <p>Takının ağırlığını ve ayarını girin. Milyem karşılığını, teorik has altın miktarını ve diğer bileşenlerin ağırlığını saniyeler içinde öğrenin.</p>
+  <p style="font-size:.89rem;color:#a8c6b9;margin-top:22px">Fiyat verisi, hesap açma veya internet üzerinden hesaplama gerekmez.</p>
+</div><div class="hero-visual" aria-hidden="true"><div class="hero-dot two"></div><div class="hero-dot"></div><div class="ingot"><strong>916‰</strong><span>SAFLIK</span></div></div></div></section>
+<section class="section" id="hesapla"><div class="wrap">
+  <span class="intro-kicker">01 / Hesaplama</span>
+  <h2>Ayar ve milyem hesaplayıcı</h2>
+  <p class="section-desc">Bir takının <strong>taş, aksesuar ve altın olmayan parçalar hariç net metal ağırlığı</strong> üzerinden yaklaşık has altın içeriğini hesaplayın.</p>
+  <div class="calc-layout">
+  <form class="panel" id="calculator" novalidate>
+    <h3>Bilgileri girin</h3><p class="fineprint">İşlem yalnızca bu tarayıcıda yapılır.</p>
+    <div class="field"><label for="mass">Net metal ağırlığı (gram)</label><input class="input-control" id="mass" name="mass" type="text" inputmode="decimal" autocomplete="off" value="10" aria-describedby="mass-hint"><p class="hint" id="mass-hint">Örnek: 12,5 — binlik ayırıcı kullanmayın.</p></div>
+    <div class="field"><label for="karat">Altın ayarı</label>
+    <select class="input-control" id="karat" name="karat"><option value="8">8 ayar (333‰)</option><option value="9">9 ayar (375‰)</option><option value="10">10 ayar (417‰)</option><option value="14">14 ayar (585‰)</option><option value="18">18 ayar (750‰)</option><option value="21">21 ayar (875‰)</option><option value="22" selected>22 ayar (916‰)</option><option value="24">24 ayar (999‰)</option><option value="custom">Özel milyem gir</option></select>
+    <div class="chip-row" aria-label="Hızlı ayar seçimi"><button type="button" class="chip" data-karat="8" aria-pressed="false">8 ayar</button><button type="button" class="chip" data-karat="14" aria-pressed="false">14 ayar</button><button type="button" class="chip" data-karat="18" aria-pressed="false">18 ayar</button><button type="button" class="chip" data-karat="22" aria-pressed="true">22 ayar</button><button type="button" class="chip" data-karat="24" aria-pressed="false">24 ayar</button></div>
+    </div>
+    <div class="field" id="custom-fineness-group" hidden><label for="custom-fineness">Milyem (1–1000 arası)</label><input class="input-control" type="text" inputmode="numeric" id="custom-fineness" value="585" autocomplete="off" disabled><p class="hint">Örnek: 585 = %58,5 teorik saf altın.</p></div>
+    <p id="form-error" class="form-error" role="alert" hidden></p>
+    <div class="controls"><button class="primary" type="submit">Hesapla</button><button class="secondary" type="reset">Temizle</button></div>
+  </form>
+  <section class="panel result-panel" aria-label="Hesaplama sonuçları"><h3>Hesap sonucu</h3><div id="results" aria-live="polite">
+    <p class="result-label">Teorik has altın miktarı</p><output id="out-fine" class="hero-number">9,16 g</output>
+    <div class="result-grid"><div class="stat"><small>Diğer bileşenler</small><strong id="out-remainder">0,84 g</strong></div><div class="stat"><small>Milyem / saflık</small><strong id="out-fineness">916‰</strong></div><div class="stat"><small>Saflık oranı</small><strong id="out-purity">%91,6</strong></div><div class="stat"><small>Değer türü</small><strong>Teorik</strong></div></div>
+    <div class="formula"><strong>İşlem:</strong> <span id="out-formula">10 × 916 ÷ 1000 = 9,16 g</span></div>
+  </div><p class="note">Sonuç, belirtilen milyeme göre matematiksel tahmindir. Ayar doğrulaması, gerçek analiz, alım-satım veya fiyat teklifi değildir.</p><button class="secondary" id="copy-result" type="button">Sonucu kopyala</button><p class="copy-status" id="copy-status" role="status" aria-live="polite"></p></section>
+  </div>
+</div></section>
+<section class="section section-pale" id="nasil-calisir"><div class="wrap"><span class="intro-kicker">02 / Mantık</span><h2>Hesap nasıl yapılır?</h2><p class="section-desc">Milyem, bir alaşımın binde kaçının saf altın kabul edildiğini gösterir. Hesaplama üç adımdan oluşur.</p>
+  <div class="info-grid"><div class="info-card"><span class="number">ADIM 01</span><h3>Net gramı belirleyin</h3><p>Taş, kordon ve altın dışındaki parçaların ağırlığını dahil etmeyin.</p></div><div class="info-card"><span class="number">ADIM 02</span><h3>Ayarı / milyemi seçin</h3><p>Örneğin yaygın 14 ayar damgası 585; 22 ayar damgası 916 milyem olarak hesaplanır.</p></div><div class="info-card"><span class="number">ADIM 03</span><h3>1000'e bölün</h3><p>Net gram × milyem ÷ 1000 = teorik has altın ağırlığı. Kalan fark diğer bileşenlerdir.</p></div></div>
+</div></section>
+<section class="section"><div class="wrap"><span class="intro-kicker">03 / Referans</span><h2>Altın ayarı ve milyem tablosu</h2><p class="section-desc">Aşağıdaki değerler yaygın saflık damgalarıdır. Ayar ifadesi ile milyem birebir matematiksel eşitlik kurmayabilir; işlemde tabloda yazan damga değeri kullanılır.</p>
+<div class="table-wrap"><table><caption class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)">Altın ayarı, milyem ve teorik saflık tablosu</caption><thead><tr><th scope="col">Ayar</th><th scope="col">Milyem</th><th scope="col">Teorik saflık</th></tr></thead><tbody>
+<tr><td>8 ayar</td><td>333‰</td><td>%33,3</td></tr><tr><td>9 ayar</td><td>375‰</td><td>%37,5</td></tr><tr><td>10 ayar</td><td>417‰</td><td>%41,7</td></tr><tr><td>14 ayar</td><td>585‰</td><td>%58,5</td></tr><tr><td>18 ayar</td><td>750‰</td><td>%75</td></tr><tr><td>21 ayar</td><td>875‰</td><td>%87,5</td></tr><tr><td>22 ayar</td><td>916‰</td><td>%91,6</td></tr><tr><td>24 ayar</td><td>999‰</td><td>%99,9</td></tr>
+</tbody></table></div><p class="fineprint" style="margin-top:16px">Not: 24 ayar, günlük dilde çok yüksek saflığı belirtir; burada ticari 999 damgası esas alınmıştır. Bileşim yalnızca damgadan kesin olarak saptanamaz. <a href="./rehber/ayar-ve-milyem/">Ayar ve milyem farkını okuyun</a>.</p>
+</div></section>
+<section class="section section-pale"><div class="wrap"><span class="intro-kicker">04 / İlgili bilgiler</span><div class="resource"><div><h2>Fiyat bilgisi mi arıyorsunuz?</h2><p class="fineprint">Bu araç fiyat veya kur göstermez. Hesaplanan has altın gramını parasal tutarla karıştırmayın.</p></div>
+<div><ul>
+<li>Güncel altın piyasası verilerini incelemek için <a href="https://altinbulteni.com/">Altın Bülteni ana sayfasını</a> ziyaret edebilirsiniz.</li>
+<li>Önceki yılların ve belirli günlerin fiyatlarını karşılaştırmak için <a href="https://altinbulteni.com/gecmis-kurlar">geçmiş altın kurları arşivine</a> bakabilirsiniz.</li>
+<li>Gram ve ayar bilgileriyle fiyat bazlı farklı hesaplar yapmak için <a href="https://altinbulteni.com/hesaplama">Altın Bülteni hesaplama sayfasını</a> kullanabilirsiniz.</li>
+</ul></div></div><p class="fineprint" style="margin:14px 0 0">Bağlantılar bilgi amaçlıdır. Bu açık kaynak araç Altın Bülteni'nin fiyat altyapısını kullanmaz.</p></div></section>
+<section class="section"><div class="wrap"><span class="intro-kicker">05 / Sık sorulan sorular</span><h2>Kısa cevaplar</h2><div class="info-grid">
+<div class="info-card"><h3>14 ayar altın kaç milyemdir?</h3><p>Yaygın kullanılan saflık işareti 585 milyemdir. 10 gram net metalde hesaplanan teorik has altın miktarı 5,85 gramdır.</p></div>
+<div class="info-card"><h3>22 ayar 10 gramda ne kadar has altın var?</h3><p>916 milyem esas alındığında 10 × 916 ÷ 1000 = 9,16 gramdır. Gerçek oran ölçümle değişebilir.</p></div>
+<div class="info-card"><h3>Bu hesap kuyumcu fiyatını verir mi?</h3><p>Hayır. İşçilik, ürün farkları ve alış-satış koşulları fiyata dahildir; bu araç yalnızca ağırlık ve saflık hesabıdır.</p></div>
+</div><p style="margin:22px 0 0"><a href="./rehber/hesaplama-ornekleri/">Daha fazla uygulamalı hesaplama örneği →</a></p></div></section>
+</main>
+<footer class="footer"><div class="wrap footer-inner"><div><strong>Milyem Hesaplayıcı</strong><p class="fineprint" style="margin:7px 0 0">Ücretsiz, bağımsız, açık kaynak teorik hesaplama aracı. Yatırım veya alım-satım tavsiyesi değildir.</p></div><nav aria-label="Alt bağlantılar"><a href="./">Hesaplayıcı</a><a href="./rehber/ayar-ve-milyem/">Milyem rehberi</a><a href="./rehber/hesaplama-ornekleri/">Örnekler</a></nav></div></footer>
+</body></html>
